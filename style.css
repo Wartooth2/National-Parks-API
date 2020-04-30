@@ -1,0 +1,44 @@
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: grey;
+}
+
+button,
+input[type='text'] {
+  padding: 8px;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  display: block;
+}
