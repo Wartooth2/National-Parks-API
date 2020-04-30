@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NPS API Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>NPS API-Find Parks Near You</h1>
+    <main class="container">
+      <form class="main-form">
+        <label for="State">
+          Please enter the two character abbreviation for your state (Texas = TX)
+          <input
+            type="text"
+            name="state"
+            id="state"
+            required
+            placeholder="State"
+          />
+        </label>
+        <label for="max">
+          Input the maximum number of results you would like to see for your desired state
+          <input
+            type="number"
+            name="max"
+            id="max"
+            required
+            placeholder="number"
+            value="10"
+            min="1"
+          />
+        </label>
+        <button type="submit" name="Submit" value="Submit">Find Parks!</button>
+      </form>
+      <p id="js-error-message" class="error-message"></p>
+      <section id="results" class="hidden">
+        <h2>Listed Parks</h2>
+        <ul id="results-list"></ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
